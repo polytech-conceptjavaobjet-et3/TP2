@@ -5,7 +5,7 @@ Polytech Paris-Saclay | 2019-20
 
 Vous allez développer une classe utilitaire en Java permettant de réaliser divers traitements sur des tableaux d’entiers.
 
-1. Créez une classe au nom approprié dans un package pertinent. Ajoutez une méthode statique à votre classe permettant de créer un tableau d’entiers (int[]) à partir d’un tableau de chaı̂nes de caractères (String[]).
+2#1. Créez une classe au nom approprié dans un package pertinent. Ajoutez une méthode statique à votre classe permettant de créer un tableau d’entiers (int[]) à partir d’un tableau de chaı̂nes de caractères (String[]).
 
 - 2#1.1 code de la classe
 
@@ -79,7 +79,7 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 > tabInt[indice] = 0;
 > ```
 
-2. Ajoutez une méthode main à cette classe pour tester la méthode précédente en lui transmettant le tableau de paramètres lu depuis la ligne de commandes.
+2#2. Ajoutez une méthode main à cette classe pour tester la méthode précédente en lui transmettant le tableau de paramètres lu depuis la ligne de commandes.
 
 - 2#2.1 méthode main
 
@@ -87,7 +87,7 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 Test
 ```
 
-3. Ajoutez une méthode de classe affichant le contenu d’un tableau d’entiers passé en paramètres.
+2#3. Ajoutez une méthode de classe affichant le contenu d’un tableau d’entiers passé en paramètres.
 
 - 2#3.1 méthode ajoutée
 
@@ -101,7 +101,7 @@ Test
 Test
 ```
 
-4. Ajoutez une méthode à la classe retournant la valeur maximale des valeurs d’un tableau d’entiers passé en paramètre. Pensez à une valeur adaptée dans le cas d'un tableau vide.
+2#4. Ajoutez une méthode à la classe retournant la valeur maximale des valeurs d’un tableau d’entiers passé en paramètre. Pensez à une valeur adaptée dans le cas d'un tableau vide.
 
 - 2#4.1 méthode ajoutée
 
@@ -115,7 +115,7 @@ Test
 Test
 ```
 
-5. On souhaite ajouter une méthode de classe qui permettrait d’échanger la valeur minimale d’un premier tableau d’entiers transmis en paramètre avec la valeur maximale d’un second tableau d’entiers.
+2#5. On souhaite ajouter une méthode de classe qui permettrait d’échanger la valeur minimale d’un premier tableau d’entiers transmis en paramètre avec la valeur maximale d’un second tableau d’entiers.
 
 - 2#5.1 méthode ajoutée si cela est possible
 
@@ -129,7 +129,7 @@ Test
 Test
 ```
 
-6. On souhaite maintenant ajouter une méthode de classe qui retourne la somme des entiers transmis en acceptant un nombre quelconque d’entiers directement en paramètres de la méthode.
+2#6. On souhaite maintenant ajouter une méthode de classe qui retourne la somme des entiers transmis en acceptant un nombre quelconque d’entiers directement en paramètres de la méthode.
 
 - 2#6.1 méthode ajoutée si cela est possible
 
@@ -143,7 +143,7 @@ Test
 Test
 ```
 
-7. Créez un fichier JAR ne contenant que le code compilé de votre classe, et utilisez-le dans la méthode main d’une nouvelle classe d'un autre package de votre choix. Créez automatiquement la documentation Javadoc de votre classe.
+2#7. Créez un fichier JAR ne contenant que le code compilé de votre classe, et utilisez-le dans la méthode main d’une nouvelle classe d'un autre package de votre choix. Créez automatiquement la documentation Javadoc de votre classe.
 
 - 2#7.1 nouvelle classe ajoutée
 

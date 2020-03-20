@@ -110,48 +110,38 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 
 - 2#3.1 méthode ajoutée
 
-```Java
-/**
- * Cette méthode permet d'afficher le contenu d'un tableau d'entiers dans la console
- * 
- * @param tabInt Le tableau d'entiers à afficher
- */
-public static void afficherTableau(int[] tabInt)
-{
-	//On crée une chaîne de caractères à afficher
-	String sortie = "";
-
-	//On remplie cette chaîne de caractères avec les valeurs du tableau d'entiers
-	for(int indice = 0; indice < tabInt.length; indice++)
-	{
-		//Si on est dans la première boucle
-		if(indice == 0)
-		{
-			//On ajoute le début de la chaîne de caractères
-			sortie += "tabInt = {";
-		}
-		//Si on n'est pas dans la première boucle
-		else
-		{
-			//On ajoute un séparateur
-			sortie += " ; ";
-		}
-		
-		//On ajoute la valeur de l'entier à la position "indice" du tableau
-		sortie += tabInt[indice];
-		
-		//Si on est dans la dernière boucle
-		if(indice == tabInt.length - 1)
-		{
-			//On ajoute la fin de la chaîne de caractères
-			sortie += "}";
-		}
-	}
-	
-	//On affiche la chaîne de caractères
-	System.out.println(sortie);
-}
-```
+> ```Java
+> /**
+>  * Cette méthode permet d'afficher le contenu d'un tableau d'entiers dans la console
+>  * 
+>  * @param tabInt Le tableau d'entiers à afficher
+>  */
+> public static void afficherTableau(int[] tabInt)
+> {
+> 	//Avec l'instruction "for"
+> 	String sortie = "Avec l'instruction \"for\" : tabInt = ";
+> 	for(int indice = 0; indice < tabInt.length; indice++)
+> 	{
+> 		sortie += tabInt[indice] + " ";
+> 	}
+> 	System.out.println(sortie);
+> 	
+> 	//Avec l'instruction "for each"
+> 	sortie = "Avec l'instruction \"for each\" : tabInt = ";
+> 	for(int entier:tabInt)
+> 	{
+> 		sortie += entier + " ";
+> 	}
+> 	System.out.println(sortie);
+> 	
+> 	//Avec la méthode "toString()" de la classe "Arrays"
+> 	sortie = "Avec la methode \"toString()\" de la classe \"Arrays\" : tabInt = ";
+> 	sortie += java.util.Arrays.toString(tabInt);
+> 	System.out.println(sortie);
+> }
+> ```
+> 
+> Dans le cas ou on utilise la méthode `[toString()](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#toString(int[]))` de la classe Arrays, on a à faire à une surcharge (cette méthode est définie pour plusieurs types de tableaux : int[], boolean[], String[], ...)
 
 - 2#3.2 Que se passe-t-il au niveau de la machine virtuelle en cas de dépassement de lecture des éléments d’un tableau, par exemple dans la méthode précédente ? Pourquoi ceci n’a-t-il pas mené à une erreur de compilation ?
 

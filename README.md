@@ -9,56 +9,55 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 
 #2.1.1 code de la classe
 
-> test
-```Java
-package et3.java;
-
-public class TableauEntiers
-{
-	/**
-	 * Cette méthode permet de transmormer un tableau de chaînes de caractères en tableau d'entiers
-	 * 
-	 * @param tabString Le tableau de chaînes de caractères à transformer
-	 * @return Le tableau d'entiers créé à partir du tableau de chaînes de caractères
-	 */
-	public static int[] creerTableauEntiers ( String [] tabString )
-	{
-		//On crée un tableau d'entiers ayant la même taille que le tableau de chaînes de caractères
-		int [] tabInt = new int [tabString.length];
-		
-		//On parcours le tableau de chaînes de caractères
-		for(int indice = 0; indice < tabString.length; indice++)
-		{
-			//On tente d'éxécuter le code ci-dessous
-			try
-			{
-				//On parse l'élément i du tableau de chaînes de caractère en entier
-				//On associe cet entier à l'élément i du tableau d'entiers
-				tabInt[indice] = Integer.parseInt(tabString[indice]);
-			}
-			//Si le code du "try" renvoie une erreur "NumberFormatException", on execute le code ci-dessous
-			catch(NumberFormatException exception)
-			{
-				//On informe l'utilisateur que tabString[indice] ne peut pas être transformé en entier
-				System.out.println("La valeur " + tabString[indice] + " d'indice " 
-						+ indice + " ne peut pas être transformée en entier.");
-				System.out.println("Cette valeur sera donc remplacée par 0 dans le tableau.");
-				
-				//On donne la valeur 0 à l'indice i du tableau d'entier
-				tabInt[indice] = 0;
-			}
-		}
-		
-		//On renvoie le tableau d'entiers
-		return tabInt;
-	}
-  
-	public static void main(String[] args) 
-	{
-		
-	}
-}
-```
+> ```Java
+> package et3.java;
+> 
+> public class TableauEntiers
+> {
+> 	/**
+> 	 * Cette méthode permet de transmormer un tableau de chaînes de caractères en tableau d'entiers
+> 	 * 
+> 	 * @param tabString Le tableau de chaînes de caractères à transformer
+> 	 * @return Le tableau d'entiers créé à partir du tableau de chaînes de caractères
+> 	 */
+> 	public static int[] creerTableauEntiers ( String [] tabString )
+> 	{
+> 		//On crée un tableau d'entiers ayant la même taille que le tableau de chaînes de caractères
+> 		int [] tabInt = new int [tabString.length];
+> 		
+> 		//On parcours le tableau de chaînes de caractères
+> 		for(int indice = 0; indice < tabString.length; indice++)
+> 		{
+> 			//On tente d'éxécuter le code ci-dessous
+> 			try
+> 			{
+> 				//On parse l'élément i du tableau de chaînes de caractère en entier
+> 				//On associe cet entier à l'élément i du tableau d'entiers
+> 				tabInt[indice] = Integer.parseInt(tabString[indice]);
+> 			}
+> 			//Si le code du "try" renvoie une erreur "NumberFormatException", on execute le code ci-dessous
+> 			catch(NumberFormatException exception)
+> 			{
+> 				//On informe l'utilisateur que tabString[indice] ne peut pas être transformé en entier
+> 				System.out.println("La valeur " + tabString[indice] + " d'indice " 
+> 						+ indice + " ne peut pas être transformée en entier.");
+> 				System.out.println("Cette valeur sera donc remplacée par 0 dans le tableau.");
+> 				
+> 				//On donne la valeur 0 à l'indice i du tableau d'entier
+> 				tabInt[indice] = 0;
+> 			}
+> 		}
+> 		
+> 		//On renvoie le tableau d'entiers
+> 		return tabInt;
+> 	}
+>   
+> 	public static void main(String[] args) 
+> 	{
+> 		
+> 	}
+> }
+> ```
 
 #2.1.2 Pourquoi est-il utile d'associer notre classe à un package ?
 

@@ -84,19 +84,19 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 - 2#2.1 méthode main
 
 > ```Java
-> 	public static void main(String[] args) 
+> public static void main(String[] args) 
+> {
+> 	//On crée notre tableau d'entiers à partir de notre tableau de chaînes de caractères
+> 	int[] tabInt = creerTableauEntiers(args);
+> 	
+> 	//On affiche les éléments du tableau d'entiers
+> 	String sortie = "tabInt : ";
+> 	for(int entier:tabInt)
 > 	{
-> 		//On crée notre tableau d'entiers à partir de notre tableau de chaînes de caractères
-> 		int[] tabInt = creerTableauEntiers(args);
-> 		
-> 		//On affiche les éléments du tableau d'entiers
-> 		String sortie = "tabInt : ";
-> 		for(int entier:tabInt)
-> 		{
-> 			sortie += entier + " ";
-> 		}
-> 		System.out.println(sortie);
+> 		sortie += entier + " ";
 > 	}
+> 	System.out.println(sortie);
+> }
 > ```
 > 
 > Pour tester le programme en ligne de commande, on utilise la commande [java](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/java.html). Dans notre cas, on obtient :
@@ -111,7 +111,46 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 - 2#3.1 méthode ajoutée
 
 ```Java
-Test
+/**
+ * Cette méthode permet d'afficher le contenu d'un tableau d'entiers dans la console
+ * 
+ * @param tabInt Le tableau d'entiers à afficher
+ */
+public static void afficherTableau(int[] tabInt)
+{
+	//On crée une chaîne de caractères à afficher
+	String sortie = "";
+
+	//On remplie cette chaîne de caractères avec les valeurs du tableau d'entiers
+	for(int indice = 0; indice < tabInt.length; indice++)
+	{
+		//Si on est dans la première boucle
+		if(indice == 0)
+		{
+			//On ajoute le début de la chaîne de caractères
+			sortie += "tabInt = {";
+		}
+		//Si on n'est pas dans la première boucle
+		else
+		{
+			//On ajoute un séparateur
+			sortie += " ; ";
+		}
+		
+		//On ajoute la valeur de l'entier à la position "indice" du tableau
+		sortie += tabInt[indice];
+		
+		//Si on est dans la dernière boucle
+		if(indice == tabInt.length - 1)
+		{
+			//On ajoute la fin de la chaîne de caractères
+			sortie += "}";
+		}
+	}
+	
+	//On affiche la chaîne de caractères
+	System.out.println(sortie);
+}
 ```
 
 - 2#3.2 Que se passe-t-il au niveau de la machine virtuelle en cas de dépassement de lecture des éléments d’un tableau, par exemple dans la méthode précédente ? Pourquoi ceci n’a-t-il pas mené à une erreur de compilation ?

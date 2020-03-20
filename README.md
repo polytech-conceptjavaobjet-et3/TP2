@@ -83,9 +83,22 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 
 - 2#2.1 méthode main
 
-```Java
-Test
-```
+> ```Java
+> 	public static void main(String[] args) 
+> 	{
+> 		//On crée notre tableau d'entiers à partir de notre tableau de chaînes de caractères
+> 		int[] tabInt = creerTableauEntiers(args);
+> 		
+> 		//On affiche les éléments du tableau d'entiers
+> 		String sortie = "tabInt : ";
+> 		for(int entier:tabInt)
+> 		{
+> 			sortie += entier + " ";
+> 		}
+> 		System.out.println(sortie);
+> 	}
+> ```
+> 
 > Pour tester le programme en ligne de commande, on utilise la commande [java](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/java.html). Dans notre cas, on obtient :
 >
 > ```c++

@@ -63,7 +63,7 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 
 > Il est utile d'associer notre classe à un package pour deux raisons principales :
 > - cela permet de mieux organiser notre code en regroupant les classes par thème;
-> - il est possible de rendre visible certains éléments uniquement pour les classes d'un même package
+> - il est possible de rendre visible certains éléments uniquement pour les classes d'un même package.
 
 - 2#1.3 Comment la méthode de conversion doit-elle se comporter en cas de problème de conversion, i.e. si une des chaı̂nes du tableau ne peut pas être convertie en entier à l’exécution ?
 
@@ -86,6 +86,12 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 ```Java
 Test
 ```
+> Pour tester le programme en ligne de commande, on utilise la commande [java](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/java.html). Dans notre cas, on obtient :
+>
+> ```c++
+> ...\TP#2\bin>java et3/java/TableauEntiers "15" "6" "4"
+> tabInt : 15 6 4
+> ```
 
 2#3. Ajoutez une méthode de classe affichant le contenu d’un tableau d’entiers passé en paramètres.
 

@@ -9,6 +9,7 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 
 #2.1.1 code de la classe
 
+> test
 ```Java
 package et3.java;
 

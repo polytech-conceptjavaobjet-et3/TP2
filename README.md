@@ -141,7 +141,7 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 > }
 > ```
 > 
-> Dans le cas ou on utilise la méthode `[toString()](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#toString(int[]))` de la classe Arrays, on a à faire à une surcharge (cette méthode est définie pour plusieurs types de tableaux : int[], boolean[], String[], ...)
+> Dans le cas ou on utilise la méthode [toString()](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#toString(int[])) de la classe Arrays, on a à faire à une surcharge (cette méthode est définie pour plusieurs types de tableaux : int[], boolean[], String[], ...)
 
 - 2#3.2 Que se passe-t-il au niveau de la machine virtuelle en cas de dépassement de lecture des éléments d’un tableau, par exemple dans la méthode précédente ? Pourquoi ceci n’a-t-il pas mené à une erreur de compilation ?
 

@@ -145,9 +145,27 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 
 - 2#3.2 Que se passe-t-il au niveau de la machine virtuelle en cas de dépassement de lecture des éléments d’un tableau, par exemple dans la méthode précédente ? Pourquoi ceci n’a-t-il pas mené à une erreur de compilation ?
 
-```Java
-Test
-```
+> Si on modifie la partie concernant l'instruction `for` de la méthode précédente (e.g. on remplace le `<` par un `<=`), cela nous donne :
+> 
+> ```Java
+> //Avec l'instruction "for"
+> String sortie = "Avec l'instruction \"for\" : tabInt = ";
+> for(int indice = 0; indice <= tabInt.length; indice++)
+> {
+> 	sortie += tabInt[indice] + " ";
+> }
+> System.out.println(sortie);
+> ```
+> 
+> Lorsqu'on fait tourner le code, une erreur est soulevée :
+> 
+> ```
+> Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+> 	at et3.java.TableauEntiers.afficherTableau(TableauEntiers.java:71)
+> 	at et3.java.TableauEntiers.main(TableauEntiers.java:95)
+> ```
+> 
+> L'erreur obtenue est une exception de type [ArrayIndexOutOfBoundsException](https://docs.oracle.com/javase/7/docs/api/java/lang/ArrayIndexOutOfBoundsException.html). On peut remarquer que c'est une [RuntimeException](https://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html), ce qui veut dire qu'elle n'apparaîtra pas lors de la compilation de notre programme mais uniquement lors de son éxécution.
 
 2#4. Ajoutez une méthode à la classe retournant la valeur maximale des valeurs d’un tableau d’entiers passé en paramètre. Pensez à une valeur adaptée dans le cas d'un tableau vide.
 

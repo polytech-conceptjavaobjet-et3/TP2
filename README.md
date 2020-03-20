@@ -15,7 +15,7 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 > public class TableauEntiers
 > {
 > 	/**
-> 	 * Cette méthode permet de transmormer un tableau de chaînes de caractères en tableau d'entiers
+> 	 * Cette méthode permet de transformer un tableau de chaînes de caractères en tableau d'entiers
 > 	 * 
 > 	 * @param tabString Le tableau de chaînes de caractères à transformer
 > 	 * @return Le tableau d'entiers créé à partir du tableau de chaînes de caractères

@@ -62,13 +62,23 @@ public class TableauEntiers
 #2.1.2 Pourquoi est-il utile d'associer notre classe à un package ?
 
 ```Java
-Test
+Il est utile d'associer notre classe à un package pour deux raisons principales :
+- cela permet de mieux organiser notre code en regroupant les classes par thème;
+- il est possible de rendre visible certains éléments uniquement pour les classes d'un même package
 ```
 
 #2.1.3 Comment la méthode de conversion doit-elle se comporter en cas de problème de conversion, i.e. si une des chaı̂nes du tableau ne peut pas être convertie en entier à l’exécution ?
 
+Dans notre cas, il est souhaitable d'associer une valeur à chaque indice du tableau d'entiers. Nous allons donc associer la valeur 0 à l'éléement du tableau d'entiers concerné pour éviter les futures erreurs. Dans un soucis de transparence, il est cependant important d'en notifier l'utilisateur.
+
 ```Java
-Test
+//On informe l'utilisateur que tabString[indice] ne peut pas être transformé en entier
+System.out.println("La valeur " + tabString[indice] + " d'indice " 
+	+ indice + " ne peut pas être transformée en entier.");
+System.out.println("Cette valeur sera donc remplacée par 0 dans le tableau.");
+				
+//On donne la valeur 0 à l'indice i du tableau d'entier
+tabInt[indice] = 0;
 ```
 
 2. Ajoutez une méthode main à cette classe pour tester la méthode précédente en lui transmettant le tableau de paramètres lu depuis la ligne de commandes.

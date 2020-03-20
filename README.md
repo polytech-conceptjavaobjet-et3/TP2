@@ -40,15 +40,15 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 > 			{
 > 				//On informe l'utilisateur que tabString[indice] ne peut pas être transformé en entier
 > 				System.out.println("La valeur " + tabString[indice] + " d'indice " 
-> 						+ indice + " ne peut pas être transformée en entier.");
-> 				System.out.println("Cette valeur sera donc remplacée par 0 dans le tableau.");
+> 						+ indice + " ne peut pas être transformée en entier");
+> 				System.out.println("Cette valeur sera donc remplacée par 0 dans le tableau");
 > 				
 > 				//On donne la valeur 0 à l'indice i du tableau d'entier
 > 				tabInt[indice] = 0;
 > 			}
 > 		}
 > 		
-> 		//On renvoie le tableau d'entiers
+> 		//On retourne le tableau d'entiers
 > 		return tabInt;
 > 	}
 >   
@@ -159,7 +159,7 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 > 
 > Lorsqu'on fait tourner le code, une erreur est soulevée :
 > 
-> ```
+> ```Java
 > Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
 > 	at et3.java.TableauEntiers.afficherTableau(TableauEntiers.java:71)
 > 	at et3.java.TableauEntiers.main(TableauEntiers.java:95)
@@ -171,15 +171,73 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 
 - 2#4.1 méthode ajoutée
 
-```Java
-Test
-```
+> ```Java
+> /**
+>  * Cette méthode permet d'obtenir le maximum d'un tableau d'entiers
+>  * 
+>  * @param tabInt Le tableau d'entiers
+>  * @return Le maximum du tableau d'entiers
+>  */
+> public static int obtenirMaximum(int[] tabInt)
+> {
+> 	int maximum;
+> 	
+> 	//Si le tableau d'entiers possède au moins 1 élément
+> 	if(tabInt.length > 0)
+> 	{
+> 		//Au début, on définit le maximum comme étant le premier élément du tableau d'entiers
+> 		maximum = tabInt[0];
+> 		
+> 		//On parcours le tableau d'entiers à partir du deuxième élément
+> 		for(int indice = 1; indice < tabInt.length; indice++)
+> 		{
+> 			//Si l'élément du tableau d'entiers à la position indice est supérieur au maximum
+> 			if(tabInt[indice] > maximum)
+> 			{
+> 				//L'élément du tableau d'entiers à la position indice devient le nouveau maximum
+> 				maximum = tabInt[indice];
+> 			}
+> 		}
+> 	}
+> 	else
+> 	{
+> 		//On informe l'utilisateur que le tableau d'entiers est vide
+> 		System.out.println("Le tableau d'entiers est vide, la valeur du maximum est donc 0");
+> 		
+> 		//On définie notre maximum comme étant 0
+> 		maximum = 0;
+> 	}
+> 	//On retourne le maximum
+> 	return maximum;	
+> }
+> ```
 
 - 2#4.2 test de la méthode ajoutée
 
-```Java
-Test
-```
+> On transforme la méthode `main()` pour tester la méthode `obtenirMaximum()` :
+> ```Java
+> public static void main(String[] args) 
+> {
+> 	//On crée notre tableau d'entiers à partir de notre tableau de chaînes de caractères
+> 	int[] tabInt = creerTableauEntiers(args);
+> 	
+> 	//On affiche le maximum du tableau d'entiers
+> 	System.out.println(obtenirMaximum(tabInt));
+> }
+> ```
+> 
+> On obtient le resultat suivant lorsqu'on éxécute le code avec un exemple de tableau rempli :
+> ```
+> ...\TP\TP#2\bin>java et3/java/TableauEntiers "15" "6" "4"
+> 15
+> ```
+> 
+> On obtient le resultat suivant lorsqu'on éxécute le code avec un exemple de tableau vide :
+> ```
+> ...\TP\TP#2\bin>java et3/java/TableauEntiers
+> Le tableau d'entiers est vide, la valeur du maximum est donc 0
+> 0
+> ```
 
 2#5. On souhaite ajouter une méthode de classe qui permettrait d’échanger la valeur minimale d’un premier tableau d’entiers transmis en paramètre avec la valeur maximale d’un second tableau d’entiers.
 

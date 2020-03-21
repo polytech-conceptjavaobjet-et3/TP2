@@ -184,18 +184,23 @@ public class TableauEntiers
 	}	
 	
 	/**
+	 * Cette méthode permet d'additionner plusieurs entiers
 	 * 
-	 * @param entiers
-	 * @return
+	 * @param entiers Les entiers à additionner
+	 * @return La somme des entiers
 	 */
-	public static int sommeEntiers (int ... entiers)
+	public static int sommeEntiers (int... entiers)
 	{
 		int somme = 0;
+		
+		//On parcours les entiers passés en paramètre
 		for (int entier : entiers)
 		{
+			//On ajoute chaque entier à la somme
 			somme += entier ;
-			System.out.println("j'ajoute : "+entier);
 		}
+		
+		//On retourne la somme des entiers
 		return somme ;
 	}
 	

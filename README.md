@@ -437,12 +437,3 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 > ```Java
 > import et3.java.TableauEntiers;
 > ```
-
-***
-
-Transmettre par courrier électronique :
-
-| :---: | :--- | 
-|destinataire|eugenie.brasier@inria.fr|
-|objet|[Polytech > Et3] TP2_NOM_Prenom|
-|pièce jointe|TP2_NOM_Prenom.pdf|

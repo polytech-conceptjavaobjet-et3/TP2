@@ -394,7 +394,7 @@ Test
 
 On commence par générer la Javadoc :
 - on va dans le menu et on selectionne `Project > Generate Javadoc`;
-![](images/javadoc1.jpg | width=100)
+<img src="images/javadoc1.jpg" height="100px">
 - une fenêtre s'ouvre, on peut changer plusieurs paramètres tels que la partie du projet pour laquelle on veut générer la Javadoc ou la location de la Javadoc sur le disque;
 ![](images/javadoc2.jpg | width=100)
 - on valide en cliquant sur `Finish`;

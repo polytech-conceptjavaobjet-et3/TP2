@@ -393,7 +393,13 @@ Test
 - 2#7.2 Quelles sont les étapes pour la création de la Javadoc et de l'archive JAR ?
 
 On commence par générer la Javadoc :
-- On 
+- on va dans le menu et on selectionne `Project > Generate Javadoc`;
+![](images/javadoc1.jpg)
+- une fenêtre s'ouvre, on peut changer plusieurs paramètres tels que la partie du projet pour laquelle on veut générer la Javadoc ou la location de la Javadoc sur le disque;
+![](images/javadoc2.jpg)
+- on valide en cliquant sur `Finish`;
+- on remarque que la Javadoc a été créée dans notre projet.
+![](images/javadoc3.jpg)
 
 ```Java
 Test

@@ -386,20 +386,20 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 
 - 2#7.1 nouvelle classe ajoutée
 
-```Java
-package test;
-
-import et3.java.TableauEntiers;
-
-public class Utilisateur
-{
-	public static void main(String[] args)
-	{
-		int[] tabInt = {4, 5, 9};
-		TableauEntiers.afficherTableau(tabInt);
-	}
-}
-```
+> ```Java
+> package test;
+> 
+> import et3.java.TableauEntiers;
+> 
+> public class Utilisateur
+> {
+> 	public static void main(String[] args)
+> 	{
+> 		int[] tabInt = {4, 5, 9};
+> 		TableauEntiers.afficherTableau(tabInt);
+> 	}
+> }
+> ```
 
 - 2#7.2 Quelles sont les étapes pour la création de la Javadoc et de l'archive JAR ?
 
@@ -435,6 +435,28 @@ public class Utilisateur
 > ```Java
 > import et3.java.TableauEntiers;
 > ```
+
+<table>
+	<thead>
+		<tr>
+			<th rowspan=2>Transmettre par courrier électronique</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>destinataire</td>
+			<td>eugenie.brasier@inria.fr</td>
+		</tr>
+		<tr>
+			<td>objet</td>
+			<td>[Polytech > Et3] TP2_NOM_Prenom</td>
+		</tr>
+		<tr>
+			<td rowspan=2>pièce-jointe</td>
+			<td>TP2_NOM_Prenom.pdf</td>
+		</tr>
+	</tbody>
+</table>
 
 | Transmettre par courrier électronique ||
 | :---: | :--- | 

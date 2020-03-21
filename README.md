@@ -394,32 +394,32 @@ Test
 
 On commence par générer la Javadoc :
 - on va dans le menu et on selectionne `Project > Generate Javadoc`;
-<img src="images/javadoc1.jpg" height="200px"\>
+<img src="images/javadoc1.jpg" height="200px"></img>
 - une fenêtre s'ouvre, on peut changer plusieurs paramètres tels que la partie du projet pour laquelle on veut générer la Javadoc ou la location de la Javadoc sur le disque;
-<img src="images/javadoc2.jpg" height="200px"\>
+<img src="images/javadoc2.jpg" height="200px"></img>
 - on valide en cliquant sur `Finish`;
 - on remarque que la Javadoc a été créée dans notre projet.
-<img src="images/javadoc3.jpg" height="200px"\>
+<img src="images/javadoc3.jpg" height="200px"></img>
 
 Ensuite, on génére l'archive JAR :
 - on fait un clic droit sur le projet en cours dans le `Package Explorer` et on clique sur `Export...`;
-<img src="images/jar1.jpg" height="200px"\>
+<img src="images/jar1.jpg" height="200px"></img>
 - on selectionne `JAR file` puis on clique sur `Next >`;
-<img src="images/jar2.jpg" height="200px"\>
+<img src="images/jar2.jpg" height="200px"></img>
 - on vérifie que la classe `TableauEntiers` est effectivement sélectionnée, on choisit la destination du fichier qui va être généré puis on valide en cliquant sur `Finish`;
-<img src="images/jar3.jpg" height="200px"\>
+<img src="images/jar3.jpg" height="200px"></img>
 - on peut faire un clic droit sur le projet en cours dans le `Package Explorer` et selectionner `Refresh` pour actualiser le projet.
-<img src="images/jar4.jpg" height="200px"\>
+<img src="images/jar4.jpg" height="200px"></img>
 
 Finalement, il nous faut ajouter l'archive JAR à notre projet pour pouvoir l'utiliser :
 - on fait un clic droit sur le projet en cours dans le `Package Explorer` et on clique sur `Properties`;
 <img src="images/ajoutjar1.jpg" height="200px">
 - on selectionne `Java Build Path` dans la fenêtre qui apparaît puis on clique sur `Add JARs...` (`Add External JARs...` si l'archive est extérieur au projet);
-<img src="images/ajoutjar2.jpg" height="200px"\>
+<img src="images/ajoutjar2.jpg" height="200px"></img>
 - on selectionne notre archive et on clique sur `OK`;
-<img src="images/ajoutjar3.jpg" height="200px"\>
+<img src="images/ajoutjar3.jpg" height="200px"></img>
 - on vérifie que l'archive a correctement été ajoutée et on clique sur `Apply and Close`;
-<img src="images/ajoutjar4.jpg" height="200px"\>
+<img src="images/ajoutjar4.jpg" height="200px"></img>
 - on appelle l'archive dans notre nouvelle classe en utilisant l'instruction `import`.
 ```Java
 import et3.java.TableauEntiers;

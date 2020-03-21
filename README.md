@@ -318,7 +318,8 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 > Dans un soucis de lecture, on crée la méthode `afficherTableauPourTest()` :
 > ```Java
 > /**
->  * Cette méthode permet d'afficher le contenu d'un tableau d'entiers dans la console. Elle est simplifiée par rapport à la méthode {@link TableauEntiers#afficherTableau(int[] tabInt)}
+>  * Cette méthode permet d'afficher le contenu d'un tableau d'entiers dans la console. 
+>  * Elle est simplifiée par rapport à la méthode {@link TableauEntiers#afficherTableau(int[] tabInt)}
 >  * 
 >  * @param tabInt Le tableau d'entiers à afficher
 >  */

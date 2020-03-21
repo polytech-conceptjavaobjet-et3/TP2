@@ -2,6 +2,7 @@ package et3.java;
 
 public class TableauEntiers
 {
+	
 	/**
 	 * Cette méthode permet de transformer un tableau de chaînes de caractères en tableau d'entiers
 	 * 
@@ -12,11 +13,11 @@ public class TableauEntiers
 	{
 		//On crée un tableau d'entiers ayant la même taille que le tableau de chaînes de caractères
 		int [] tabInt = new int [tabString.length];
-		
+ 		
 		//On parcours le tableau de chaînes de caractères
 		for(int indice = 0; indice < tabString.length; indice++)
 		{
-			//On tente d'éxécuter le code ci-dessous
+ 			//On tente d'éxécuter le code ci-dessous
 			try
 			{
 				//On parse l'élément i du tableau de chaînes de caractère en entier
@@ -35,7 +36,7 @@ public class TableauEntiers
 				tabInt[indice] = 0;
 			}
 		}
-		
+
 		//On retourne le tableau d'entiers
 		return tabInt;
 	}
@@ -118,7 +119,6 @@ public class TableauEntiers
 			//On définie notre maximum comme étant 0
 			maximum = Integer.MIN_VALUE;
 		}
-		
 		//On retourne le maximum
 		return maximum;	
 	}
@@ -181,7 +181,7 @@ public class TableauEntiers
 			//On retourne "faux" car l'échange n'a pas eu lieu
 			return false;
 		}
-	}	
+	}
 	
 	/**
 	 * Cette méthode permet d'additionner plusieurs entiers
@@ -189,7 +189,7 @@ public class TableauEntiers
 	 * @param entiers Les entiers à additionner
 	 * @return La somme des entiers
 	 */
-	public static int sommeEntiers (int... entiers)
+	public static int sommeEntiers(int... entiers)
 	{
 		int somme = 0;
 		
@@ -206,19 +206,35 @@ public class TableauEntiers
 	
 	public static void main(String[] args) 
 	{
-		//On crée nos tableaux d'entiers
-		int tabInt1 [] = {1, 2, 3, 4, 5};
-		int tabInt2 [] = {6, 7, 8, 9, 1};
+		int[] tabInt;
+		int[] tabInt1 = {1, 2, 3, 4, 5};
+		int[] tabInt2 = {6, 7, 8, 9, 1};
 		
-		//On affiche lest tableaux
-		afficherTableauPourTest(tabInt1);
-		afficherTableauPourTest(tabInt2);
+		//Test de la méthode obtenirMaximum(int[] tabInt)
 		
-		//On échange les valeurs (minimum tabInt1 <=> maximum tabInt2)
-		System.out.println(echangerMinTabInt1EtMaxTabInt2(tabInt1, tabInt2));
+			//On crée notre tableau d'entiers à partir de notre tableau de chaînes de caractères
+			tabInt = creerTableauEntiers(args);
+			
+			//On affiche le maximum du tableau d'entiers
+			System.out.println(obtenirMaximum(tabInt));
 		
-		//On affiche lest tableaux
-		afficherTableauPourTest(tabInt1);
-		afficherTableauPourTest(tabInt2);
+		//Test pour la méthode echangerMinTabInt1EtMaxTabInt2(int[] tabInt1, int[] tabInt2)
+
+			//On affiche lest tableaux
+			afficherTableau(tabInt1);
+			afficherTableau(tabInt2);
+			
+			//On échange les valeurs (minimum tabInt1 <=> maximum tabInt2)
+			System.out.println(echangerMinTabInt1EtMaxTabInt2(tabInt1, tabInt2));
+			
+			//On affiche lest tableaux
+			afficherTableau(tabInt1);
+			afficherTableau(tabInt2);
+		
+		//Test de la méthode sommeEntiers(int... entiers)
+			
+			//On affiche la somme de entiers : 1, 5, 8 et 30
+			System.out.println("La somme de tous les entiers est " + sommeEntiers(1,5,8,30));
 	}
+	
 }

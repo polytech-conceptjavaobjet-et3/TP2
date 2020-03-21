@@ -200,7 +200,7 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 
 - 2#4.2 test de la méthode ajoutée
 
-> On transforme la méthode `main()` pour tester la méthode `obtenirMaximum()` :
+> On transforme la méthode `main()` pour tester la méthode `obtenirMaximum(int[] tabInt)` :
 > ```Java
 > public static void main(String[] args) 
 > {
@@ -294,7 +294,7 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 
 - 2#5.2 test de la méthode ajoutée
 
-> On teste cette nouvelle méthode dans le `main()` :
+> On transforme la méthode `main()` pour tester la méthode `echangerMinTabInt1EtMaxTabInt2(int[] tabInt1, int[] tabInt2)` :
 > ```Java
 > public static void main(String[] args) 
 > {
@@ -344,15 +344,43 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 
 - 2#6.1 méthode ajoutée si cela est possible
 
-```Java
-Test
-```
+> On utilise la notation `Type...` en paramètre de méthode pour permettre un nombre variables de paramètres. Le paramètre qui sera récupéré dans la méthode sera de type `Type[]` (dans la documentation, il faut chercher [Varargs](https://docs.oracle.com/javase/8/docs/technotes/guides/language/varargs.html)).
+> ```Java
+> /**
+>  * Cette méthode permet d'additionner plusieurs entiers
+>  * 
+>  * @param entiers Les entiers à additionner
+>  * @return La somme des entiers
+>  */
+> public static int sommeEntiers (int... entiers)
+> {
+> 	int somme = 0;
+> 	
+> 	//On parcours les entiers passés en paramètre
+> 	for (int entier : entiers)
+> 	{
+> 		//On ajoute chaque entier à la somme
+> 		somme += entier ;
+> 	}
+> 	
+> 	//On retourne la somme des entiers
+> 	return somme ;
+> }
+> ```
 
 - 2#6.2 test de la méthode ajoutée
 
-```Java
-Test
-```
+> On transforme la méthode `main()` pour tester la méthode `sommeEntiers(int... entiers)` :
+> ```Java
+> public static void main(String[] args) 
+> {
+> 	//On crée notre tableau d'entiers à partir de notre tableau de chaînes de caractères
+> 	int[] tabInt = creerTableauEntiers(args);
+> 	
+> 	//On affiche la somme de entiers : 1, 5, 8 et 30
+> 	System.out.println(sommeEntiers(1,5,8,30));
+> }
+> ```
 
 2#7. Créez un fichier JAR ne contenant que le code compilé de votre classe, et utilisez-le dans la méthode main d’une nouvelle classe d'un autre package de votre choix. Créez automatiquement la documentation Javadoc de votre classe.
 

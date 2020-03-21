@@ -1,6 +1,8 @@
 Programmation Java @ Et3
 Polytech Paris-Saclay | 2019-20
 
+***
+
 # TP2 
 
 Vous allez développer une classe utilitaire en Java permettant de réaliser divers traitements sur des tableaux d’entiers.
@@ -436,30 +438,11 @@ Vous allez développer une classe utilitaire en Java permettant de réaliser div
 > import et3.java.TableauEntiers;
 > ```
 
-<table>
-	<thead>
-		<tr>
-			<th rowspan=2>Transmettre par courrier électronique</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>destinataire</td>
-			<td>eugenie.brasier@inria.fr</td>
-		</tr>
-		<tr>
-			<td>objet</td>
-			<td>[Polytech > Et3] TP2_NOM_Prenom</td>
-		</tr>
-		<tr>
-			<td rowspan=2>pièce-jointe</td>
-			<td>TP2_NOM_Prenom.pdf</td>
-		</tr>
-	</tbody>
-</table>
+***
 
-| Transmettre par courrier électronique ||
+Transmettre par courrier électronique :
+
 | :---: | :--- | 
-|to|eugenie.brasier@inria.fr|
-|title|[Polytech > Et3] TP2_NOM_Prenom|
-|attached|TP2_NOM_Prenom.pdf|
+|destinataire|eugenie.brasier@inria.fr|
+|objet|[Polytech > Et3] TP2_NOM_Prenom|
+|pièce jointe|TP2_NOM_Prenom.pdf|

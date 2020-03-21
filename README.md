@@ -413,7 +413,7 @@ Ensuite, on génére l'archive JAR :
 
 Finalement, il nous faut ajouter l'archive JAR à notre projet pour pouvoir l'utiliser :
 - on fait un clic droit sur le projet en cours dans le `Package Explorer` et on clique sur `Properties`;
-<img src="images/ajoutjar1.jpg" height="200px">
+<img src="images/ajoutjar1.jpg" height="200px"></img>
 - on selectionne `Java Build Path` dans la fenêtre qui apparaît puis on clique sur `Add JARs...` (`Add External JARs...` si l'archive est extérieur au projet);
 <img src="images/ajoutjar2.jpg" height="200px"></img>
 - on selectionne notre archive et on clique sur `OK`;

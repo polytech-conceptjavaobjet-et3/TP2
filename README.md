@@ -392,6 +392,9 @@ Test
 
 - 2#7.2 Quelles sont les étapes pour la création de la Javadoc et de l'archive JAR ?
 
+On commence par générer la Javadoc :
+- On 
+
 ```Java
 Test
 ```

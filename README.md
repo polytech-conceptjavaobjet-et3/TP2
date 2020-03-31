@@ -1,13 +1,6 @@
 Programmation Java @ Et3
 <br>
 Polytech Paris-Saclay | 2019-20
-
-$\sqrt{k}$
-\sqrt{k}
-```
-$\sqrt{k}$
-\sqrt{k}
-```
 ___
 
 # TP2 
